@@ -1,0 +1,653 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", SegoeUI,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background-color: #fff;
+    color: #333;
+    margin: auto;
+}
+
+/*Nav Section*/
+
+.logo img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.menu-bar {
+    display: flex;
+    flex: 1;
+}
+
+.dropdown {
+    position: relative;
+    text-transform: capitalize;
+    display: none;
+}
+
+
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown ul a {
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.dropdown:hover ul {
+    display: flex;
+    z-index: 1;
+}
+
+.menu-bar2 {
+    display: flex;
+}
+
+.menu-bar li {
+    padding: 0 8px;
+}
+
+.menu-bar2 li {
+    padding: 0 10px;
+}
+
+.menu-bar a:hover, .menu-bar2 a:hover {
+    border-bottom: solid 2px #333;
+    padding-bottom: 2px;
+}
+/* Showcase section */
+
+.showcase {
+    background: url('images/showcase.avif') no-repeat center center/cover;
+    height: 500px;
+    padding: 20px;
+    color: #000;
+    position: relative;
+    
+}
+
+.showcase-content {
+    width: 40%;
+    padding: 40px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.showcase-inner {
+    width: 80%;
+}
+
+.showcase-inner h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.showcase-inner .btn {
+    padding: 10px;
+    background-color: #0067b8;
+    color: #fff;
+    width: 90px;
+    font-weight: bold;
+    font-size: 14;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Devices section*/
+
+.devices img {
+    height: 50px;
+}
+
+.devices {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px 10px;
+    margin: 30px auto;
+}
+
+.devices-content {
+    text-align: center;
+}
+
+.span-5 {
+    grid-column: span 5;
+}
+
+.devices a {
+    color: #0067b8;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.devices-content p {
+    margin-bottom: 20px;
+}
+
+/*Card section */
+
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 30px 0;
+}
+
+.inner-cards {
+    border: 1px solid #fff;
+    
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inner-cards img {
+    width: 100%;
+}
+
+.inner-cards h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.description{
+    padding: 0 20px;
+    color: #000;
+}
+
+.inner-cards p {
+    line-height: 1.5;
+}
+
+.inner-cards .btn {
+    background-color: #0067b8;
+    color: #fff;
+    font-weight: bold;
+    width:fit-content;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-lg {
+    margin-top: 40px;
+}
+
+.btn-xlg {
+    margin-top: 80px;
+}
+
+/*microsoft section*/
+
+.microsoft {
+    background: url("images/Highlight.avif") no-repeat center center/cover;
+    height: 70vh;
+    padding: 30px;
+    margin:0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.microsoft-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding: 30px;
+    margin-top: 40px;
+    color: #000;
+}
+
+.microsoft-content h3 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    width: 70%;
+}
+
+.microsoft-content p {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.microsoft-content .btn {
+    background-color: #0067b8;
+    color: #fff;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.microsoft-content .btn2 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.microsoft-content .btn2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.microsoft-content .btn2:hover i {
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+/*For Business */
+.business {
+    color: #000;
+    padding: 15px 0;
+}
+.biz-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        margin: 30px 0;
+    }
+
+.biz-innercard{
+    padding: 15px;
+}
+
+.biz-card1 {
+        box-sizing: border-box;
+         border: 1px solid #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.biz-card1 img {
+    width: 100%;
+}
+
+.bz-header h3, .biz-card1 h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+.biz-card1 p {
+    line-height: 1.5;
+}
+
+.new-update {
+    background-color: #ffb900;
+    width: 40px;
+    padding: 5px 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.biz-card1 .btn {
+    background-color: #0067b8;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-bz {
+    font-weight: 500;
+    padding: 20px 20px 20px 0;
+    color: #0067b8;
+    margin-top: 5px;
+}
+
+.btn-bz i {
+    margin-left: 150px;
+}
+
+.btn-bz:hover {
+    color: #0067b8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-bz:hover i {
+    padding-left: 10px;
+    cursor: pointer;
+} 
+
+.biz-card1 .btn2 {
+    font-weight: 500;
+    width: 90px;
+    padding: 10px 10px;
+    color: #fff;
+    margin-top: 5px;
+    background-color: #0067b8;
+    margin-top: 150px;
+}
+
+.biz-card1 .btn3 {
+    width: 200px;
+    margin-top: 150px;
+}
+
+.biz-card1 .btn:hover, 
+.biz-card1 .btn2:hover,
+.biz-card1 .btn3:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/*Social media */
+
+.follow {
+    margin: 20px auto;
+}
+
+.sm-handles {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #000;
+
+}
+
+.sm-handles p {
+    margin-right: 25px;
+}
+
+.sm-handles .sm {
+    padding: 10px;
+    margin: 5px;
+}
+
+.sm-handles .sm:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/*Footer */
+
+.footer-top {
+    background-color: #f2f2f2;
+    font-size: 11px;
+    color: #616161;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 1200px;
+    margin: 10px auto;
+    line-height: 1.6;
+    padding: 20px 0;
+    
+}
+
+.footer-content h4 {
+    font-size: 13px;
+    font-weight: light;
+}
+
+.footer-cards p:hover, .footer-btcr p:hover, .footer-btc p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000;
+}
+
+.footer-btc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-btc i {
+    padding-right: 10px;
+}
+
+.footer-btcr {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80%;
+}
+
+.footer-btcr p {
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1074px){
+    .hosc {
+        display: none;
+    }
+    
+
+    .dropdown{
+        display: flex;
+    }
+    .devices {
+        grid-template-columns: repeat(4, 1fr);
+        }
+    .devices div:nth-child(5),
+    .devices div:nth-child(6) {
+            grid-column: span 2;
+        }
+    .cards-content, .biz-cards {
+        grid-template-columns: repeat(2, 1fr); 
+        }
+    .cards-content .btn:last-child {
+        margin-top: 15px;
+    }
+
+
+    .microsoft {
+        margin: 0 auto 250px;
+    }
+
+    .microsoft-content h3 {
+        font-size: 25px;
+        width: 100%;
+        }
+    
+    .microsoft-content {
+        Position: absolute;
+        top: 380px;
+        background-color: #fff;
+        width: 85%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    .mc-btn .btn2, .mc-btn .btn {
+        width: 40%;
+        display: inline;
+        margin-right: 10px;
+        }
+        .biz-card1 .btn {
+            width: 250px;
+        }
+    
+        .btn-bz {
+            font-weight: 500;
+            padding: 10px 5px;
+            color: #0067b8;
+            margin-top: 5px;
+        }
+
+        .btn-bz i {
+            margin-left: 35px;
+        }
+        .biz-card1 .btn2 {
+            margin-top: 100px;
+        }
+    
+        .biz-card1 .btn3 {
+            margin-top: 100px;
+            width: 300px;
+        }
+        .footer-content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-btc {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 90%;
+            align-items: start;
+            margin-left: 20px;
+        }
+        .footer-btcr {
+            width: 95%;
+        }
+}
+
+@media (max-width: 900px){
+    .showcase-content{
+        Position: absolute;
+        top: 480px;
+        background-color: #fff;
+        width: 85%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        padding: 10px 15px;
+        }
+
+    .showcase-inner {
+        width: 100%;
+    }
+    .showcase-inner .btn {
+        margin-bottom: 10px;
+    }
+    .devices {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 280px;
+    }
+    .devices div:nth-child(5),
+    .devices div:nth-child(6) {
+            grid-column: auto;
+        }
+
+    .microsoft  {
+        width: 90%;
+       
+    }
+    
+    .business h3, .microsoft h3, .cards h3{
+        font-size: 20px;
+    }
+
+    .biz-innercard .btn, 
+    .biz-innercard .btn-bz, 
+    .biz-innercard .btn2
+    .biz-innercard .btn3 {
+        font-size: 14px;
+    }
+
+    .biz-innercard .btn-bz, .biz-innercard .btn {
+        width: 190px;
+    }
+
+    .biz-innercard .btn {
+        padding: 5px 8px;
+    }
+
+    .biz-innercard .btn-bz i {
+        margin-left: 110px;
+    }
+
+    .biz-innercard h3, 
+    .biz-innercard p {
+        width: 80%;
+    }
+
+    .footer-btcr {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 95%;
+    }
+    .footer-btcr p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 678px){
+    .devices {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 5px;
+    }
+
+    .devices div:first-child, 
+    .devices div:nth-child(6){
+        grid-column: span 2;
+    }
+
+    .showcase-content {
+        padding: 5px;
+    }
+
+    .showcase-inner {
+        width: 100%;
+    }
+    .showcase-inner h2 {
+        font-size: 18px;
+    }
+    .footer-btcr {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 550px){
+    .cards-content, .biz-cards, .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .devices div:nth-child(2) {
+         grid-column: span 2;
+        }
+    .devices div:nth-child(6){
+        grid-column: auto;
+    }
+
+    .devices {
+        margin-top: 200px;
+    }
+
+    .footer-btcr {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-btcr p {
+        margin-right: 2px;
+    }
+}
+
+ 
+
